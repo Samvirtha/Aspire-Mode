@@ -1,5 +1,5 @@
 # Aspire-Mode
-A Chrome extension that helps you **stay focused** by blocking distracting websites during study mode and sending you **motivational quotes** at regular intervals. 
+A Chrome extension that helps you **stay focused** by blocking distracting websites during Focus mode and sending you **motivational quotes** at regular intervals. 
 
 
 ## Features

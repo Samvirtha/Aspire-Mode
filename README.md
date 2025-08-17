@@ -1,3 +1,16 @@
 # Aspire-Mode
- A Google extension which is built to help students .It helps you block websites in study mode and gives you motivational Quotes
- 
+A Chrome extension that helps you **stay focused** by blocking distracting websites during study mode and sending you **motivational quotes** at regular intervals. 
+
+
+## Features
+### Shows Quote 
+- It gives you motivational quotes.
+- Quotes appear automatically every 60 minutes.
+- Randomly selected from a stored list.
+
+### Website Blocking
+- Enable **Study Mode** to block distracting websites (like YouTube, Facebook, etc.).
+- Fully customizable list of blocked sites.
+- Turn Study Mode **ON/OFF** anytime.
+
+

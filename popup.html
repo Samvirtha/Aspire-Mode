@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Aspire Mode</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="popup-container">
+      <h1 class="title">✨ Aspire Mode ✨</h1>
+
+      <button id="toggleMode" class="btn">🎯 Toggle Study Mode</button>
+      <button id="showQuote" class="btn">💡 Show Quote</button>
+
+      <!-- Quote display -->
+      <div
+        id="quoteBox"
+        class="subtitle"
+        style="margin-top: 12px; font-style: italic; text-align: center"
+      >
+        Click "Show Quote" to get inspired!
+      </div>
+
+      <h2 class="subtitle">⚡ Study Settings</h2>
+
+      <label>Blocked Sites (comma or newline separated):</label>
+      <textarea
+        id="blockedSites"
+        placeholder="e.g.
+youtube.com
+reddit.com
+instagram.com"
+      ></textarea>
+
+      <label>Start Time:</label>
+      <input type="time" id="startTime" />
+
+      <label>End Time:</label>
+      <input type="time" id="endTime" />
+
+      <button id="saveSettings" class="btn small">💾 Save Settings</button>
+
+      <div id="progressContainer">
+        <p id="progressText">Day Progress: --%</p>
+        <div class="progress-bar">
+          <div id="progressFill"></div>
+        </div>
+      </div>
+
+      <div id="status" class="status"></div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

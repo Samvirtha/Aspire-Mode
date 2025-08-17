@@ -1,0 +1,118 @@
+/* Popup size */
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+  width: 320px;   /* popup width */
+  height: 520px;  /* popup height */
+  background: linear-gradient(135deg, #e3f2fd, #f5f7ff);
+  display: flex;
+  flex-direction: column;   /* stack header + content */
+  align-items: center;
+}
+
+.header {
+  width: 100%;
+  background: linear-gradient(135deg, #64b5f6, #1976d2);
+  color: #fff;
+  text-align: center;
+  padding: 12px 0;
+  font-weight: 700;
+  font-size: 20px;
+  border-bottom: none; /* remove the gray line since bg already stands out */
+  border-radius: 0 0 12px 12px; /* curved bottom */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+
+.header h1 {
+  font-size: 20px;
+  color: #1a237e;
+  margin: 0;
+  font-weight: 700;
+}
+.subtitle {
+  margin-top: 14px;
+  margin-bottom: 6px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a237e;   /* darker blue */
+  text-align: left; /* aligns with input boxes */
+}
+
+.popup-container {
+  width: 92%;
+  background: #ffffffcc;
+  backdrop-filter: blur(4px);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+  padding: 16px 14px;
+}
+
+.title {
+  text-align: center;
+  font-size: 22px;
+  margin: 6px 0 18px; /* more spacing */
+  color: #1a237e;
+  font-weight: 700;
+
+
+}
+
+.btn:first-of-type {
+  margin-top: 6px; /* spacing between title & first button */
+}
+
+
+.subtitle {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #37474f;
+}
+
+/* Rounded, modern buttons */
+.btn {
+  width: 100%;
+  padding: 10px 12px;
+  margin: 8px 0;
+  border: 0;
+  border-radius: 12px;     /* curved */
+  background: #1976d2;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(25,118,210,.25);
+  transition: transform .08s ease, box-shadow .2s ease, background .2s ease;
+}
+.btn:hover { transform: translateY(-1px); box-shadow: 0 6px 18px rgba(25,118,210,.30); }
+.btn.small { font-size: 13px; padding: 8px 10px; background:#1565c0; }
+
+input[type="text"], textarea, input[type="time"] {
+  width: 100%;
+  padding: 9px 10px;
+  border: 1px solid #d1d9e6;
+  border-radius: 10px;     /* curved inputs */
+  margin: 6px 0 12px;
+  font-size: 13px;
+  outline: none;
+  background: #fff;
+}
+textarea { min-height: 64px; resize: vertical; }
+
+.progress-bar {
+  width: 100%;
+  height: 12px;
+  background: #e0e7ff;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 6px;
+}
+#progressFill {
+  height: 100%;
+  width: 0%;
+  background: #4caf50;
+  transition: width .3s ease;
+  border-radius: 10px;
+}
+
+.status { margin-top: 8px; font-size: 12px; color: #455a64; }

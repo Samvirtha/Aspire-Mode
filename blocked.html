@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Study Mode Active</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #ff4e50, #f9d423);
+        color: #fff;
+        text-align: center;
+      }
+
+      .emoji {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+        max-width: 500px;
+        line-height: 1.5;
+      }
+
+      #quoteBox {
+        margin-top: 20px;
+        font-style: italic;
+        font-size: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="emoji">🚫</div>
+    <h1>Study Mode Active</h1>
+    <p>
+      Distractions are paused. Your future self will thank you for studying now!
+      ✨
+    </p>
+    <div id="quoteBox"></div>
+
+    <script>
+      const quotes = [
+        "Stay focused and never give up.",
+        "One step at a time, one day at a time.",
+        "Your hard work today builds your tomorrow.",
+        "Discipline is the bridge between goals and achievement.",
+        "Dream big, start small, act now.",
+        "Consistency beats intensity.",
+        "Success is the sum of small efforts repeated daily.",
+        "Push yourself, because no one else is going to do it for you.",
+        "Great things never come from comfort zones.",
+        "Small progress each day adds up to big results.",
+        "Don’t stop until you’re proud.",
+        "Your only limit is your mind.",
+        "Doubt kills more dreams than failure ever will.",
+        "Focus on progress, not perfection.",
+        "Believe you can, and you’re halfway there.",
+      ];
+
+      document.getElementById("quoteBox").textContent =
+        quotes[Math.floor(Math.random() * quotes.length)];
+    </script>
+  </body>
+</html>
